@@ -137,6 +137,7 @@ let wrongAttempt = 0
 let indexNumber = 0
 
 function NextQuestion(index) {
+    document.getElementById("score-modal").style.display = "none";
     handleQuestions()
     const currentQuestion = shuffledQuestions[index]
     document.getElementById("question-number").innerHTML = questionNumber
@@ -229,6 +230,7 @@ function unCheckRadioButtons() {
 
 
 function handleEndGame() {
+    document.getElementById("score-modal").style.display = "block";
     let remark = null
     let remarkColor = null
 
